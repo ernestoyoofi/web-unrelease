@@ -29,6 +29,18 @@
   --color-bluearchive-7: #353C42;
 }
 
+.masking-gradation-top-to-bottom {
+  mask: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), transparent);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.masking-gradation-bottom-to-top {
+  mask: linear-gradient(transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

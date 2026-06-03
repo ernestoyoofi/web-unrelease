@@ -4,18 +4,18 @@ import NavbarMenu from "@/components/ui/NavbarMenu"
 
 export default function Root({ children }) {
   return <>
-    <div className="fixed top-0 left-0 w-full flex justify-center">
+    {/* <div className="sticky top-0 left-0 w-full flex justify-center">
       <span className="text-[0.9rem] bg-yellow-600 text-white px-3.5 py-1">The website is currently under progress development!</span>
-    </div>
+    </div> */}
     <NavbarMenu
       items={[
         { label: "Home", href: "/" },
-        { label: "Posts", href: "/posts?t=article" },
+        // { label: "Posts", href: "/posts?t=article" },
         { label: "Achievements", href: "/achievements" },
         { label: "About Me?", href: "/about" },
-        { label: "Old Web?", href: "https://yupibknpermen.my.id" },
+        { label: "Current Prod", href: "https://ernestoyoofi.vercel.app" },
         // { label: "Lena ExLab (AI)", href: "https://lena.yupibknpermen.my.id" },
-        // { label: "Exclusive", href: "https://exclusive.yupibknpermen.my.id" },
+        { label: "Exclusive", href: "https://exclusive.yupibknpermen.my.id" },
       ]}
       socialmedia={[
         { label: "Github", href: "https://github.com/ernestoyoofi" },

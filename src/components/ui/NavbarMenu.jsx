@@ -110,19 +110,19 @@ export default function NavbarMenu({ items = [], socialmedia = [] }) {
           >
             <motion.span
               initial={{
-                marginTop: "50px",
-                transform: "rotate(7deg)"
+                marginTop: "55px",
+                transform: "rotate(6deg)"
               }}
               animate={{
-                marginTop: isOpen? "0":"50px",
-                transform: isOpen? "rotate(0deg)":"rotate(7deg)",
+                marginTop: isOpen? "0":"55px",
+                transform: isOpen? "rotate(0deg)":"rotate(6deg)",
                 transition: {
                   duration: isOpen? 0.7:0.2,
-                  delay: isOpen? 0.3 + (0.03 * index) : (0.03 * (items.length - 1 - index)),
+                  delay: isOpen? 0.6 + (0.05 * index) : (0.05 * (items.length - 1 - index)),
                   ease: [0.76, 0, 0.24, 1]
                 }
               }}
-              className="flex items-start text-3xl font-bold uppercase tracking-tighter max-sm:justify-center"
+              className="flex items-start text-3xl font-bold uppercase tracking-tighter"
             >
               {item.label}
               {isExternal && <div className="flex w-[28px] h-[36px] items-center">

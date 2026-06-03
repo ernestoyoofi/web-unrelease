@@ -4,8 +4,9 @@ import { useState } from "react"
 import { Tabs } from "@heroui/react"
 
 export default function Posts() {
-  return <div className="w-full max-w-5xl m-auto px-2">
-    <h1 className="font-bold text-4xl tracking-tighter my-6">Posts</h1>
+  return <div className="w-full max-w-5xl m-auto px-5">
+      <h1 className="font-bold text-4xl tracking-tighter mt-6">Posts</h1>
+      <p className="text-sm mb-6 text-neutral-600">Articles or threads that have been written, as well as a collection of project showcases / posts</p>
     <Tabs>
       <Tabs.ListContainer className="w-[240px]">
         <Tabs.List aria-label="Options" className="bg-white *:data-[selected=true]:text-accent-foreground">
